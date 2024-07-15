@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import OurSectionsVerticalBar from "@/components/custom/OurSectionsVerticalBar"
+import { TiTick } from "react-icons/ti";
 
 export default function Home() {
   return (
@@ -66,8 +67,123 @@ export default function Home() {
       </section>
 
 
-      <section className="h-screen bg-black">
+      <section className="h-screen w-full flex justify-center bg-black">
+          <section className="flex flex-col">
+            <div className="w-full flex justify-center pt-10 pb-2">
+              <h1 className="text-3xl font-bold text-gray-100">Risk Management & Compliance Unit</h1>
+            </div>
 
+            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
+              <section className="bg-gray-900 w-1/2 ">
+                  <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
+              </section>
+              <section className="h-full flex flex-col justify-center items-center w-1/2">
+                  <div className="w-full flex justify-start pb-8">
+                      <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
+                  </div>
+
+                  <section className="flex flex-col gap-3">
+                    
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Set up and review policy and strategy for risk management in the Authority</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Co-ordinate the various functional activities which advise on risk management issues within the Volta River Authority</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Prepare reports on risk for Management the Board and other stakeholders</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Maintain a Risk Register for the Authority, which is updated periodically depending on the changes in risk exposures from the business environment.</h1>
+                    </section>
+                  </section>
+              </section>
+            </section>
+          </section>
+      </section>
+
+
+      <section className="h-screen w-full flex justify-center bg-gray-300 text-gray-900">
+          <section className="flex flex-col">
+            <div className="w-full flex justify-center pt-10 pb-2">
+              <h1 className="text-3xl font-bold text-gray-900">Performance Monitoring & Evaluation</h1>
+            </div>
+
+            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
+              <section className="h-full flex flex-col justify-center items-center w-1/2">
+                  <div className="w-full flex justify-start pb-8">
+                      <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
+                  </div>
+
+                  <section className="flex flex-col gap-3">
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Corporate and Departmental Performance Monitoring, Assessment and Evaluation</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Cascading of Corporate Strategic Objectives to various functional areas for the development of Business Strategic Objectives aligned to corporate strategic direction</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Facilitate the preparation and submission of Departmental Business Plans of all functional areas of the Authority.</h1>
+                    </section>
+                  </section>
+              </section>
+              <section className="bg-gray-900 w-1/2 ">
+                  <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
+              </section>
+            </section>
+          </section>
+      </section>
+
+
+      
+      <section className="h-screen w-full flex justify-center bg-black">
+          <section className="flex flex-col">
+            <div className="w-full flex justify-center pt-10 pb-2">
+              <h1 className="text-3xl font-bold text-gray-100">Corporate Strategy & Planning Unit</h1>
+            </div>
+
+            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
+              <section className="bg-gray-900 w-1/2 ">
+                  <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
+              </section>
+              <section className="h-full flex flex-col justify-center items-center w-1/2">
+                  <div className="w-full flex justify-start pb-8">
+                      <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
+                  </div>
+
+                  <section className="flex flex-col gap-3">
+                    
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Monitor Implementation of Authority’s Strategic Plan</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Electricity Supply & Demand Analysis Reports</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Conducts Policy & Market Research to Improve Authority’s Strategic Plans</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Communicates Authority’s Strategic Plan and other issues of strategic concern</h1>
+                    </section>
+                    <section className="flex gap-2 items-center border-b pb-2">
+                      <TiTick size={25}/>
+                      <h1 className="">Coordinate and Prepare Quarterly and Annual Corporate Performance Reports (incl. Corporate Plan, Performance Contract etc for SIGA).</h1>
+                    </section>
+                  </section>
+              </section>
+            </section>
+          </section>
       </section>
 
     </main>
