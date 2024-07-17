@@ -5,6 +5,9 @@ import OurSectionsVerticalBar from "@/components/custom/OurSectionsVerticalBar"
 import { TiTick } from "react-icons/ti";
 import { Andika } from "next/font/google";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { GoArrowUpRight } from "react-icons/go";
+import { BiFolder } from "react-icons/bi";
+import { FaFolderOpen } from "react-icons/fa";
 
 const andika = Andika({ weight: "400", subsets:["latin"] });
 
@@ -15,14 +18,14 @@ export default function Home() {
       
       <nav className="fixed z-10 top-0 w-full bg-[#0F1825]/60 flex justify-between px-24 py-5">
           <Link href="/" className="hover:text-gray-200 text-blue-100 2xl:text-lg">Corporate Strategy</Link>
-          <section className="flex gap-6">
+          <section className="md:flex gap-6 hidden">
             <Link href="href" className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold">Our Sections</Link>
             <Link href="href" className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold">View Reports</Link>
           </section>
       </nav>
 
       {/* Hero Section */}
-      <section className="h-screen relative w-full overflow-hidden">
+      <section className="h-screen relative w-full overflow-hidden ">
         <video autoPlay loop muted className='w-full hidden md:block absolute z-0  '>
               <source
                 src='/chess.mp4'
@@ -30,7 +33,7 @@ export default function Home() {
               />
         </video>
        <section className="absolute flex justify-center text-white items-center  w-full h-full bg-gray-900/60">
-          <section className="flex flex-col-reverse md:flex-row items-center mx-auto w-10/12 justify-between gap-10 md:gap-0">
+          <section className="flex flex-col md:flex-row items-center mx-auto w-10/12 justify-between gap-10 md:gap-0">
             <section className="flex flex-col md:w-1/2 w-full  ">
               <h1 className={`andika-regular text-2xl 2xl:text-3xl ${andika.className}`}>We are</h1>
               <h2 className="text-5xl inter-bold font-bold mt-2 2xl:text-7xl">Corporate Strategy</h2>
@@ -53,17 +56,17 @@ export default function Home() {
        </section>
       </section>
 
-      <section className="h-screen 2xl:h-fit 2xl:py-20 justify-center flex items-center bg-gray-300 w-full">
-        <section className="flex flex-col items-center">
+      <section className="h-screen 2xl:h-fit 2xl:py-20 justify-center flex items-center bg-gray-300 w-full py-12 md:py-0">
+        <section className="flex flex-col items-center mb-10 md:mb-0">
             <div className="w-full flex justify-center pt-6 pb-2">
               <h1 className="text-3xl 2xl:text-5xl font-bold text-gray-900 2xl:mb-8">Our Three Sections</h1>
             </div>
 
             <section className="mt-4 flex-1 flex-col md:flex-row flex items-center mx-auto w-10/12 justify-between">
-              <section className="bg-gray-900 w-1/2 h-full">
+              <section className="bg-gray-900 md:w-1/2 w-full h-full">
                   <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="cover" />
               </section>
-              <section className="h-full flex items-center w-1/2">
+              <section className="h-full flex items-center md:w-1/2 w-full">
                   <OurSectionsVerticalBar/>
               </section>
             </section>
@@ -77,11 +80,11 @@ export default function Home() {
               <h1 className="text-3xl font-bold text-gray-100 2xl:text-5xl mb-8 2xl:mb-10">Corporate Strategy & Planning Unit</h1>
             </div>
 
-            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
-              <section className="bg-gray-900 w-1/2 ">
+            <section className="mt-2 flex-1 gap-6 flex md:flex-row flex-col items-center mx-auto w-10/12 justify-between">
+              <section className="bg-gray-900 md:w-1/2 w-full">
                   <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
               </section>
-              <section className="h-full flex flex-col justify-center items-center w-1/2">
+              <section className="h-full flex flex-col justify-center items-center w-full md:w-1/2">
                   <div className="w-full flex justify-start pb-8">
                       <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
                   </div>
@@ -121,8 +124,8 @@ export default function Home() {
               <h1 className="text-3xl font-bold text-gray-900 2xl:text-5xl mb-8 2xl:mb-10">Performance Monitoring & Evaluation</h1>
             </div>
 
-            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
-              <section className="h-full flex flex-col justify-center items-center w-1/2">
+            <section className="mt-2 flex-1 gap-6 flex flex-col md:flex-row  items-center mx-auto w-10/12 justify-between">
+              <section className="h-full flex flex-col justify-center items-center md:w-1/2 w-full">
                   <div className="w-full flex justify-start pb-8">
                       <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
                   </div>
@@ -142,7 +145,7 @@ export default function Home() {
                     </section>
                   </section>
               </section>
-              <section className="bg-gray-900 w-1/2 ">
+              <section className="bg-gray-900 md:w-1/2 w-full">
                   <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
               </section>
             </section>
@@ -155,11 +158,11 @@ export default function Home() {
               <h1 className="text-3xl font-bold text-gray-100 2xl:text-5xl mb-8 2xl:mb-10">Risk Management & Compliance Unit</h1>
             </div>
 
-            <section className="mt-2 flex-1 gap-6 flex items-center mx-auto w-10/12 justify-between">
-              <section className="bg-gray-900 w-1/2 ">
+            <section className="mt-2 flex-1 gap-10 mb-10 md:mb-0 md:gap-6 flex flex-col md:flex-row items-center mx-auto w-10/12 justify-between">
+              <section className="bg-gray-900 md:w-1/2 w-full">
                   <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
               </section>
-              <section className="h-full flex flex-col justify-center items-center w-1/2">
+              <section className="h-full flex flex-col justify-center items-center md:w-1/2 w-full">
                   <div className="w-full flex justify-start pb-8">
                       <h1 className="font-semibold text-3xl text-start">Our Responsibilities</h1>
                   </div>
@@ -218,37 +221,70 @@ export default function Home() {
       <section className="h-screen w-full flex justify-center bg-gray-300 2xl:py-20 2xl:h-fit items-center" >
           <section className="flex flex-col">
             <div className="w-full flex justify-center pt-10 pb-2">
-              <h1 className="text-3xl font-bold text-gray-900">Our Reports</h1>
+              <h1 className="text-3xl font-bold text-gray-900 mb-12 md:mb-0">Our Reports</h1>
             </div>
 
             <section className="w-full">
-            <Tabs defaultValue="csp" className="w-full">
-              <TabsList className=" bg-gray-300">
+            <Tabs defaultValue="csp" className="w-10/12 flex flex-col items-center mx-auto">
+              <TabsList className=" bg-gray-300 flex flex-col md:flex-row">
                   <TabsTrigger className='bg-gray-300 rounded-md text-gray-800  flex justify-start  data-[state=active]:text-white data-[state=active]:bg-[#0F1825] data-[state=active]:border-t-[#0F1825] data-[state=active]:border-b data-[state=active]:border-b-blue-400' value="csp">Corporate Strategy and Planning</TabsTrigger>
                   <TabsTrigger className='bg-gray-300 rounded-md text-gray-800  flex justify-start  data-[state=active]:text-white data-[state=active]:bg-[#0F1825] data-[state=active]:border-t-[#0F1825] data-[state=active]:border-b data-[state=active]:border-b-blue-400' value="cpme">Performance and Montioring Evaluation</TabsTrigger>
                   <TabsTrigger className='bg-gray-300 rounded-md text-gray-800  flex justify-start  data-[state=active]:text-white data-[state=active]:bg-[#0F1825] data-[state=active]:border-t-[#0F1825] data-[state=active]:border-b data-[state=active]:border-b-blue-400' value="risk">Risk & Compliance</TabsTrigger>
-                  
               </TabsList>
-              <TabsContent value="department">
-                <section className=" w-full flex flex-col gap-3 p-3 rounded-lg">
+              <TabsContent value="csp">
+                <section className=" w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
+                    <a href ="" className="">
+                      <div className="w-full bg-white px-4 py-3 rounded-lg">
+                          <div className="w-full flex justify-center">
+                            <FaFolderOpen className="w-full" color="gray" size={110}/>
+                          </div>
+                          <p className="text-gray-700 hover:underline font-semibold text-center">Operational Analysis Reports </p>
+                      </div>
+                    </a>
 
-                </section>
-                <section className="w-full ">
-                      <section className="w-3/4 justify-center items-center mt-2 mb-6">
-                          
-                      </section>
-                </section>
+                    <a href ="" className="">
+                      <div className="w-full bg-white px-4 py-3 rounded-lg">
+                          <div className="w-full flex justify-center">
+                            <FaFolderOpen className="w-full" color="gray" size={110}/>
+                          </div>
+                          <p className="text-gray-700 hover:underline font-semibold text-center">Macroeconomic Research & Analysis Reports </p>
+                      </div>
+                    </a>
+
+                    <a href ="" className="">
+                      <div className="w-full bg-white px-4 py-3 rounded-lg">
+                          <div className="w-full flex justify-center">
+                            <FaFolderOpen className="w-full" color="gray" size={110}/>
+                          </div>
+                          <p className="text-gray-700 hover:underline font-semibold text-center">Industry Research & Analysis Reports
+                          </p>
+                      </div>
+                    </a>
+
+                    <a href ="" className="">
+                      <div className="w-full bg-white px-4 py-3 rounded-lg">
+                          <div className="w-full flex justify-center">
+                            <FaFolderOpen className="w-full" color="gray" size={110}/>
+                          </div>
+                          <p className="text-gray-700 hover:underline font-semibold text-center">GoG and Policy Analysis Reports
+                          </p>
+                      </div>
+                    </a>
+                    
+                  
+
                 
+                </section>
               </TabsContent>
-              <TabsContent value="corporate">
+              <TabsContent value="cpme">
                   <section className=" w-full flex flex-col gap-3 p-3 rounded-lg">
                       
-                </section>
-                <section className="w-full ">
-                      <section className="w-3/4 justify-center items-center mt-2 mb-6">
-                        
-                      </section>
-                </section>
+                  </section>
+              </TabsContent>
+              <TabsContent value="risk">
+                  <section className=" w-full flex flex-col gap-3 p-3 rounded-lg">
+                      
+                  </section>
               </TabsContent>
             </Tabs>
 
