@@ -27,6 +27,7 @@ const OurThreeSectionsSection = () => {
 
   return (
     <motion.section
+     id='our-sections'
       ref={ref}
       initial="hidden"
       animate={controls}

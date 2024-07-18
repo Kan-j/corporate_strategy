@@ -70,31 +70,31 @@ const CorporateStrategySection = () => {
             <section className="flex flex-col gap-3">
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Monitor Implementation of Authority’s Strategic Plan</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Electricity Supply & Demand Analysis Reports</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Conducts Policy & Market Research to Improve Authority’s Strategic Plans</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Communicates Authority’s Strategic Plan and other issues of strategic concern</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Coordinate and Prepare Quarterly and Annual Corporate Performance Reports (incl. Corporate Plan, Performance Contract etc for SIGA).</h1>
               </section>

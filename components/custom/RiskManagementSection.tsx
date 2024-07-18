@@ -69,25 +69,25 @@ const RiskManagementSection = () => {
             <section className="flex flex-col gap-3">
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Set up and review policy and strategy for risk management in the Authority</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Co-ordinate the various functional activities which advise on risk management issues within the Volta River Authority</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Prepare reports on risk for Management, the Board, and other stakeholders</h1>
               </section>
               <section className="flex gap-2 items-center border-b pb-2 text-gray-100">
                 <div className="">
-                  <TiTick size={25} />
+                  <TiTick size={25} color='white' />
                 </div>
                 <h1 className="text-gray-100">Maintain a Risk Register for the Authority, which is updated periodically depending on the changes in risk exposures from the business environment.</h1>
               </section>

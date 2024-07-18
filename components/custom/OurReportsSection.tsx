@@ -27,6 +27,7 @@ const OurReportsSection = () => {
 
   return (
     <motion.section
+      id="our-reports"
       ref={ref}
       initial="hidden"
       animate={controls}
