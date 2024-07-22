@@ -22,20 +22,18 @@ const Navbar = () => {
         Corporate Strategy
       </Link>
       <section className="md:flex gap-6 hidden">
-        <a
-          href="#our-sections"
+        <button
           onClick={() => scrollToSection('our-sections')}
           className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold cursor-pointer"
         >
           Our Sections
-        </a>
-        <a
-          href="#our-reports"
+        </button>
+        <button
           onClick={() => scrollToSection('our-reports')}
           className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold cursor-pointer"
         >
           View Reports
-        </a>
+        </button>
       </section>
     </motion.nav>
   );

@@ -16,6 +16,7 @@ import OurReportsSection from "@/components/custom/OurReportsSection";
 import VraStrategySection from "@/components/custom/VraStrategySection";
 import OurThreeSectionsSection from "@/components/custom/OurThreeSectionsSection";
 import Navbar from "@/components/custom/NavBar";
+import FooterSection from "@/components/custom/FooterSection";
 
 const andika = Andika({ weight: "400", subsets:["latin"] });
 
@@ -23,14 +24,7 @@ export default function Home() {
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">
-      
-      {/* <nav className="fixed z-10 top-0 w-full bg-[#0F1825]/60 flex justify-between px-24 py-5">
-          <Link href="/" className="hover:text-gray-200 text-blue-100 2xl:text-lg">Corporate Strategy</Link>
-          <section className="md:flex gap-6 hidden">
-            <Link href="href" className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold">Our Sections</Link>
-            <Link href="href" className="hover:border-t text-blue-100 pt-1 2xl:text-lg font-semibold">View Reports</Link>
-          </section>
-      </nav> */}
+
       <Navbar/>
       <HeroSection/>
       <OurThreeSectionsSection/>
@@ -57,8 +51,8 @@ export default function Home() {
 
 
       <OurReportsSection/>
-
-      <footer className="bg-[#0F1825] w-full text-blue-100 py-8 relative bottom-0">
+      <FooterSection/>
+      {/* <footer className="bg-[#0F1825] w-full text-blue-100 py-8 relative bottom-0">
         <div className="container mx-auto px-24 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <h2 className=" font-bold">Corporate Strategy</h2>
@@ -70,7 +64,7 @@ export default function Home() {
           <Link href="href" className="hover:border-t text-blue-100 pt-1">View Reports</Link>
           </section>
         </div>
-      </footer>
+      </footer> */}
     </main>
   );
 }

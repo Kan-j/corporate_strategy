@@ -14,6 +14,14 @@ const heroVariants = {
 };
 
 const HeroSection = () => {
+  const scrollToSection = (id:any) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <section className="h-screen relative w-full overflow-hidden">
       <video autoPlay loop muted className='w-full hidden md:block absolute z-0'>
@@ -38,8 +46,8 @@ const HeroSection = () => {
               We assist the Executive to formulate, implement, monitor, evaluate the Authority’s Strategy, associated Risks and Compliance Obligations
             </p>
             <section className="mt-8 flex w-full gap-5">
-              <Button className="bg-[#53E9F8] 2xl:text-lg text-gray-800 hover:text-gray-200 hover:bg-[#098591] font-semibold">View Reports</Button>
-              <Button className="text-gray-900 bg-white 2xl:text-lg hover:bg-gray-300 font-semibold">Learn More about Us</Button>
+              <Button onClick={()=>scrollToSection('our-reports')} className="bg-[#53E9F8] 2xl:text-lg text-gray-800 hover:text-gray-200 hover:bg-[#098591] font-semibold">View Reports</Button>
+              <Button onClick={()=>scrollToSection('our-sections')} className="text-gray-900 bg-white 2xl:text-lg hover:bg-gray-300 font-semibold">Learn More about Us</Button>
             </section>
           </motion.section>
           <motion.section
