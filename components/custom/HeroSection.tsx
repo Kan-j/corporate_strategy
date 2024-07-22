@@ -46,7 +46,7 @@ const HeroSection = () => {
               We assist the Executive to formulate, implement, monitor, evaluate the Authority’s Strategy, associated Risks and Compliance Obligations
             </p>
             <section className="mt-8 flex w-full gap-5">
-              <Button onClick={()=>scrollToSection('our-reports')} className="bg-[#53E9F8] 2xl:text-lg text-gray-800 hover:text-gray-200 hover:bg-[#098591] font-semibold">View Reports</Button>
+              <Button onClick={()=>scrollToSection('our-reports')} className="bg-[rgb(83,233,248)] 2xl:text-lg text-gray-800 hover:text-gray-200 hover:bg-[#098591] font-semibold">View Reports</Button>
               <Button onClick={()=>scrollToSection('our-sections')} className="text-gray-900 bg-white 2xl:text-lg hover:bg-gray-300 font-semibold">Learn More about Us</Button>
             </section>
           </motion.section>

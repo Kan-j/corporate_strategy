@@ -47,7 +47,7 @@ const VraStrategySection = () => {
           variants={contentVariants}
           className="w-9/12 mx-auto mt-4"
         >
-          <Image src="/braise-spice.jpg" alt="Braise-Spice" width={400} height={400} className="w-full" objectFit="contain"/>
+          <Image src="/braise-spice.jpg" alt="Braise-Spice" width={400} height={400} className="h-4/6 aspect-auto" objectFit="contain"/>
         </motion.section>
       </section>
     </motion.section>

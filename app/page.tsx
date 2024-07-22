@@ -31,40 +31,10 @@ export default function Home() {
       <CorporateStrategySection/>
       <PerformanceMonitoringSection/>    
       <RiskManagementSection/>
-      <VraStrategySection/>
-
-      {/* <section className="h-screen w-full flex justify-center bg-gray-300 2xl:py-20  2xl:h-fit items-center">
-          <section className="flex flex-col">
-            <div className="w-full flex justify-center pt-10 pb-2">
-              <h1 className="text-3xl font-bold text-gray-900">VRA's Strategy Pathway</h1>
-            </div>
-          </section>
-      </section> */}
-
-      {/* <section className="h-screen w-full flex justify-center bg-gray-300 2xl:py-20 2xl:h-fit items-center">
-          <section className="flex flex-col">
-            <div className="w-full flex justify-center pt-10 pb-2">
-              <h1 className="text-3xl font-bold text-gray-900">How We Fit in</h1>
-            </div>
-          </section>
-      </section> */}
-
-
+      {/* <VraStrategySection/> */}
       <OurReportsSection/>
       <FooterSection/>
-      {/* <footer className="bg-[#0F1825] w-full text-blue-100 py-8 relative bottom-0">
-        <div className="container mx-auto px-24 flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-4 md:mb-0">
-            <h2 className=" font-bold">Corporate Strategy</h2>
-            <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
-          </div>
-          
-          <section className="flex gap-6">
-          <Link href="href" className="hover:border-t text-blue-100 pt-1">Our Sections</Link>
-          <Link href="href" className="hover:border-t text-blue-100 pt-1">View Reports</Link>
-          </section>
-        </div>
-      </footer> */}
+
     </main>
   );
 }

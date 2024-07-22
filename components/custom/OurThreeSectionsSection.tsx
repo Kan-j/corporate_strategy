@@ -51,7 +51,7 @@ const OurThreeSectionsSection = () => {
           className="mt-4 flex-1 flex-col md:flex-row flex items-center mx-auto w-10/12 justify-between"
         >
           <section className="bg-gray-900 md:w-1/2 w-full h-full">
-            <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="cover" />
+            <Image src="/placeholder_corporate.jpg" alt="alt" width={400} height={280} className="w-full h-full" objectFit="contain" />
           </section>
           <section className="h-full flex items-center md:w-1/2 w-full">
             <OurSectionsVerticalBar />

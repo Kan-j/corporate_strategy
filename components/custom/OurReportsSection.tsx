@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'; // Adjust the import according to your tabs component
 import { FaFolderOpen } from 'react-icons/fa';
+import FolderItem from './FolderItem';
 
 const sectionVariants = {
   hidden: { opacity: 0 },
@@ -14,6 +15,58 @@ const contentVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.5 } }
 };
+
+const strategyAndPlanningData = [
+  {
+    resourceLink: '/',
+    name: 'Operational Analysis Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Macroeconomic Research & Analysis Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Industry Research & Analysis Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'GoG and Policy Analysis Reports'
+  },
+]
+
+
+const riskAndComplianceData = [
+  {
+    resourceLink: '/',
+    name: 'Key Risk Indicator Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Status Of Compliance Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Quantitative Risk Analysis Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Status of License, Permit and PSPAs Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Assessment Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'Monitoring Reports'
+  },
+  {
+    resourceLink: '/',
+    name: 'MEGFIT Reports'
+  },
+
+]
 
 const OurReportsSection = () => {
   const controls = useAnimation();
@@ -58,38 +111,9 @@ const OurReportsSection = () => {
             </TabsList>
             <TabsContent value="csp">
               <section className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
-                <a href="" className="">
-                  <div className="w-full bg-white px-4 py-3 rounded-lg">
-                    <div className="w-full flex justify-center">
-                      <FaFolderOpen className="w-full" color="gray" size={110} />
-                    </div>
-                    <p className="text-gray-700 hover:underline font-semibold text-center">Operational Analysis Reports</p>
-                  </div>
-                </a>
-                <a href="" className="">
-                  <div className="w-full bg-white px-4 py-3 rounded-lg">
-                    <div className="w-full flex justify-center">
-                      <FaFolderOpen className="w-full" color="gray" size={110} />
-                    </div>
-                    <p className="text-gray-700 hover:underline font-semibold text-center">Macroeconomic Research & Analysis Reports</p>
-                  </div>
-                </a>
-                <a href="" className="">
-                  <div className="w-full bg-white px-4 py-3 rounded-lg">
-                    <div className="w-full flex justify-center">
-                      <FaFolderOpen className="w-full" color="gray" size={110} />
-                    </div>
-                    <p className="text-gray-700 hover:underline font-semibold text-center">Industry Research & Analysis Reports</p>
-                  </div>
-                </a>
-                <a href="" className="">
-                  <div className="w-full bg-white px-4 py-3 rounded-lg">
-                    <div className="w-full flex justify-center">
-                      <FaFolderOpen className="w-full" color="gray" size={110} />
-                    </div>
-                    <p className="text-gray-700 hover:underline font-semibold text-center">GoG and Policy Analysis Reports</p>
-                  </div>
-                </a>
+               {strategyAndPlanningData.map((data)=>{
+                return <FolderItem folderLink={data.resourceLink} folderName={data.name} />
+               })}
               </section>
             </TabsContent>
             <TabsContent value="cpme">
@@ -98,8 +122,11 @@ const OurReportsSection = () => {
               </section>
             </TabsContent>
             <TabsContent value="risk">
-              <section className="w-full flex flex-col gap-3 p-3 rounded-lg">
+              <section className="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
                 {/* Add content for risk here */}
+                {riskAndComplianceData.map((data)=>{
+                return <FolderItem folderLink={data.resourceLink} folderName={data.name} />
+               })}
               </section>
             </TabsContent>
           </Tabs>
